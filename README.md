@@ -1,6 +1,6 @@
 ![TSW alt tag healer logo](banner-1544x500.png "alt tag healer banner")
 
-# Alt Tag Healer
+# Alt Tag Healer Ajax
 
 - Contributors: tradesouthwest
 - Donate link: https://paypal.me/tradesouthwest
@@ -20,6 +20,8 @@ A good tool to Bypasses PHP Latency: Large sites with high product counts often 
 Highly Accurate: By querying the WordPress REST API Reference, we get the actual metadata assigned in the Media Library rather than guessing.
 
 Vanilla JS Performance: There are zero dependencies on jQuery, keeping your site's Core Web Vitals optimized.
+
+Since you often deal with large product databases, this method is significantly safer than running a bulk SQL query. It fixes images "on-demand" as you browse the site, ensuring you don't hit PHP memory limits by processing 90,000 images at once.
 
 ## Installation 
 
