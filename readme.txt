@@ -1,9 +1,10 @@
 === Alt Tag Healer Ajax ===
 Contributors: tradesouthwestgmailcom
-Donate link:
-Tags: images, list, software, packages, subpackages
+Donate link:  https://paypal.me/tradesouthwest
+Tags: images, alt, tags
 Requires at least: 4.9
 Tested up to: 6.5
+Version: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
