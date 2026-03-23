@@ -2,8 +2,9 @@
 /**
  * Plugin Name: Vanilla JS Persistent Alt Healer
  * Description: Dynamically detects and permanently saves missing alt tags to the database.
- * Version: 1.1
- * Author: Trade Southwest
+ * Version: 1.0.0
+ * Text domain: alt-tag-healer-ajax
+ * Author: TradeSouthwest
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit;
