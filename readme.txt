@@ -1,7 +1,7 @@
 === Alt Tag Healer ===
 Contributors: tradesouthwestgmailcom
 Donate link:  https://paypal.me/tradesouthwest
-Tags: images, alt, tags
+Tags: images, alt, tags, ajax
 Requires at least: 4.9
 Tested up to: 6.8
 Version: 1.0.1
