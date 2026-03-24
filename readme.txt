@@ -1,10 +1,10 @@
-=== Alt Tag Healer Ajax ===
+=== Alt Tag Healer ===
 Contributors: tradesouthwestgmailcom
 Donate link:  https://paypal.me/tradesouthwest
 Tags: images, alt, tags
 Requires at least: 4.9
-Tested up to: 6.5
-Version: 1.0.0
+Tested up to: 6.8
+Version: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -34,3 +34,6 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' screen in WordPress
 3. This is a plug and play plugin and requires no additional settings or options.
 
+== ChangeLog ==
+1.0.1
+* fixed ensure compatibility across more environments
