@@ -1,4 +1,9 @@
-/* alt-healer-ajax.js */
+/**
+ * alt-healer.js fixes missing alt tags
+ * @param healImages Looks for missing data.
+ * @param saveAltToDB Saves data to db.
+ * v1.2 
+*/
 (function() {
     'use strict';
 
@@ -31,17 +36,17 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    // Logic: Use Caption, or fallback to Post Title
-                    let newAlt = data.caption?.rendered 
-                        ? data.caption.rendered.replace(/<[^>]*>?/gm, '') 
-                        : altHealerData.postTitle;
-                    
-                    newAlt = newAlt.trim();
-                    img.setAttribute('alt', newAlt);
+					// Traditional check instead of optional chaining (?.)
+					let newAlt = (data.caption && data.caption.rendered) 
+						? data.caption.rendered.replace(/<[^>]*>?/gm, '') 
+						: altHealerData.postTitle;
 
-                    // Step 2: Save to Database permanently
-                    saveAltToDB(attachmentId, newAlt);
-                });
+					newAlt = newAlt.trim();
+					img.setAttribute('alt', newAlt);
+
+					// Step 2: Save to Database permanently
+					saveAltToDB(attachmentId, newAlt);
+				});
             } else {
                 // If no ID (like an external image), just fix DOM temporarily
                 img.setAttribute('alt', altHealerData.postTitle);

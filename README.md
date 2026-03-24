@@ -1,6 +1,6 @@
 ![TSW alt tag healer logo](banner-1544x500.png "alt tag healer banner")
 
-# Alt Tag Healer Ajax
+# Alt Tag Healer
 
 - Contributors: tradesouthwest
 - Donate link: https://paypal.me/tradesouthwest
@@ -11,7 +11,7 @@
 - License: GPLv2 or later
 - License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically adds alt tags based on the title of the article/post-title or by using the caption.
+Automatically adds alt tags based on the title of the article/post-title or by using the caption. By automating this "healing" process, you are improving the site's E-E-A-T (Experience, Expertise, Authoritativeness, and Trustworthiness) by ensuring search engines can properly index your visual content.
 
 ## Description 
 

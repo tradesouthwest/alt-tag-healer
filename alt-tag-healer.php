@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Vanilla JS Persistent Alt Healer
+ * Plugin Name: Alt Tag Healer
  * Description: Dynamically detects and permanently saves missing alt tags to the database.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Text domain: alt-tag-healer-ajax
  * Author: TradeSouthwest
  */
@@ -37,7 +37,9 @@ function ts_update_alt_callback( $request ) {
 
 add_action( 'wp_enqueue_scripts', function() {
     if ( is_singular() && current_user_can( 'edit_posts' ) ) {
-        wp_enqueue_script( 'alt-healer-js', plugin_dir_url( __FILE__ ) . 'alt-healer.js', [], '1.1', true );
+        wp_enqueue_script( 'alt-healer-js', 
+            plugin_dir_url( __FILE__ ) 
+            . 'alt-healer.js', [], '1.2', true );
 
         wp_localize_script( 'alt-healer-js', 'altHealerData', [
             'root'      => esc_url_raw( rest_url() ),
