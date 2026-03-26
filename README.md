@@ -5,7 +5,7 @@
 - Contributors: tradesouthwest
 - Donate link: https://paypal.me/tradesouthwest
 - Tags: alt, al tags, tools
-- Version: 1.1.1
+- Version: 1.1.2
 - Requires at least: 4.9.15
 - Requires PHP:      7.4
 - Requires CP:       2.2

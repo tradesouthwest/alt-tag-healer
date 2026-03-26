@@ -4,7 +4,7 @@ Donate link:  https://paypal.me/tradesouthwest
 Tags: images, alt, tags, ajax
 Requires at least: 4.9
 Tested up to: 6.8
-Version: 1.1.1
+Version: 1.1.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

@@ -3,33 +3,25 @@ name: Generate Clean Release Zip
 on:
   push:
     tags:
-      - 'v*' # Triggers on any tag starting with 'v'
+      - 'v*' # Triggers when you push a tag like v1.2.0
 
 jobs:
   build:
-    name: Create Release and Upload Zip
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Required to upload assets to a release
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v6
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: Build Plugin Zip
-        id: build_zip
-        # Using 10up's tool for a clean, production-ready archive
-        uses: 10up/action-wordpress-plugin-build-zip@stable #maybe check latest ver
+      # Create a clean build using git archive (respects .gitattributes export-ignore)
+      - name: Create distribution archive
+        run: |
+          git archive --format=zip --prefix=alt-tag-healer/ HEAD -o alt-tag-healer.zip
 
+      # Create GitHub Release and upload the zip
       - name: Create GitHub Release
-        id: create_release
         uses: softprops/action-gh-release@v2
         with:
-          # This uses the path output from the 10up action
-          files: ${{ steps.build_zip.outputs.zip-path }}
-          name: Release ${{ github.ref_name }}
-          draft: false
-          prerelease: false
-          generate_release_notes: true # Automatically summarizes PRs/commits
+          files: alt-tag-healer.zip
+          generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

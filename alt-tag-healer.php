@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Alt Tag Healer
  * Description: Dynamically detects and permanently saves missing alt tags to the database.
- * Version: 1.1.1
+ * Version: 1.1.2
  * Text domain: alt-tag-healer-ajax
  * Author: TradeSouthwest
  */
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 add_action( 'rest_api_init', function () {
     register_rest_route( 'alt-healer/v1', '/update-alt', [
         'methods' => 'POST',
-        'callback' => 'ts_update_alt_callback',
+        'callback' => 'alts_update_alt_callback',
         'permission_callback' => function () {
             // Only allow logged-in users with 'edit_posts' capability
             return current_user_can( 'edit_posts' );
@@ -21,7 +21,7 @@ add_action( 'rest_api_init', function () {
     ]);
 });
 
-function ts_update_alt_callback( $request ) {
+function alts_update_alt_callback( $request ) {
     $attachment_id = absint( $request->get_param( 'id' ) );
     $new_alt       = sanitize_text_field( $request->get_param( 'alt' ) );
 
