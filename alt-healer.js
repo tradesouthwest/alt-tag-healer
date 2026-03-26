@@ -2,7 +2,7 @@
  * alt-healer.js fixes missing alt tags
  * @param healImages Looks for missing data.
  * @param saveAltToDB Saves data to db.
- * v1.2 
+ * @version v1.2 
 */
 (function() {
     'use strict';
