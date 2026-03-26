@@ -19,7 +19,7 @@ jobs:
       - name: Build Plugin Zip
         id: build_zip
         # Using 10up's tool for a clean, production-ready archive
-        uses: 10up/action-wordpress-plugin-build-zip@stable
+        uses: 10up/action-wordpress-plugin-build-zip@stable #maybe check latest ver
 
       - name: Create GitHub Release
         id: create_release
