@@ -4,7 +4,8 @@
 
 - Contributors: tradesouthwest
 - Donate link: https://paypal.me/tradesouthwest
-- Tags: php version, version, debug, debug information, tools, developer
+- Tags: alt, al tags, tools
+- Version: 1.1.0
 - Requires at least: 4.9.15
 - Requires PHP:      7.4
 - Requires CP:       2.2
