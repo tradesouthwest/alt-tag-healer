@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '24'
-
+          package-manager-cache: false
       - name: CPCS get rules
         run: |
           wget -O phpcs.xml https://raw.githubusercontent.com/ClassicPress/ClassicPress-Coding-Standards/main/phpcs.xml
