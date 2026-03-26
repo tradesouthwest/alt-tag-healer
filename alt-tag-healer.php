@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Alt Tag Healer
  * Description: Dynamically detects and permanently saves missing alt tags to the database.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Text domain: alt-tag-healer-ajax
  * Author: TradeSouthwest
  */
